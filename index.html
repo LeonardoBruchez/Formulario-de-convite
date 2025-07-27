@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/index.css">
+  <title>Formulario de convite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <aside>
+      <div class="aside-container">
+        <img src="assets/Background.png" alt="">
+        
+        <div class="text-aside">
+          <img src="assets/icons/Logo.svg" alt="">
+          <h2>Festivite</h2>
+          <p>Crie um convite digital para o seu evento</p>
+        </div>
+        
+      </div>
+    </aside>
+    <main>
+      <div class="main-container">
+        <h1>Crie seu convite</h1>
+        <form method="post" enctype="multipart/form-data">
+          <fieldset>
+            <div id="event-icon">
+              <img src="assets/icons/calendar.svg" alt="">
+              <legend>Sobre o evento</legend>
+            </div>
+            
+            <div class="grid-rows EventName">
+              <label>Título</label>
+              <input type="text" placeholder="Nome do evento" id="EventName" name="EventName">
+            </div>
+            
+          </fieldset>
+        </form>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

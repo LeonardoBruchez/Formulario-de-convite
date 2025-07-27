@@ -1,0 +1,6 @@
+@import url(fieldset/index.css);
+form,fieldset{
+  appearance: none;
+  border: none;
+}
+

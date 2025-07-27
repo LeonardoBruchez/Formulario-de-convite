@@ -1,0 +1,26 @@
+fieldset {
+  #event-icon {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 24px 122px;
+    gap: 12px;
+    color: var(--text-heading);
+    margin-bottom: 24px;
+    img {
+      width: 24px;
+      height: 24px;
+      align-items: center;
+    }
+  }
+
+  .EventName {
+    input[type="text"]{
+    background-color: var(--input-base-color);
+    height: 48px;
+    border: 1px solid var(--input-stroke-color);
+    border-radius: 8px;
+    padding-left: 16px;
+  }
+  }
+ 
+}
