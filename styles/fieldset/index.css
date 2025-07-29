@@ -1,2 +1,6 @@
 @import url(fieldset.css);
 @import url(input.css);
+@import url(type.css);
+@import url(local.css);
+@import url(textarea.css);
+@import url(radio.css);

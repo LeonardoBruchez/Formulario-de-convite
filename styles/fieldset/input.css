@@ -1,4 +1,43 @@
-input[type="text"],input[type="text"]:focus {
+input[type="text"],
+[type="text"]:focus,
+[type="datetime-local"],
+[type="datetime-local"]:focus  {
   outline: none;
+  appearance: none;
 }
+
+input[type="datetime-local"] {
+  position: relative;
+
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    opacity: 0;
+  }
+}
+
+input[type="text"]:focus,[type="datetime-local"]:focus,textarea:focus{
+  outline: 1px solid #59B2FF;
+}
+
+input[type="radio"] {
+  all: unset;
+}
+
+
+input[type="text"],[type="datetime-local"],textarea{
+  margin-top: 12px;
+  background-color: var(--input-base-color);
+  height: 48px;
+  border: 1px solid var(--input-stroke-color);
+  border-radius: 8px;
+  padding-left: 16px;
+  color: var(--input-placeholder-color);
+
+      
+}
+
+
+
+
+
 

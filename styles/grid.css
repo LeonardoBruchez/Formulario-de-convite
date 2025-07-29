@@ -1,4 +1,7 @@
 .grid-rows {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+}
+
+.grid-column {
+  display: grid;
 }

@@ -27,20 +27,116 @@
       <div class="main-container">
         <h1>Crie seu convite</h1>
         <form method="post" enctype="multipart/form-data">
-          <fieldset>
-            <div id="event-icon">
+          <fieldset id="fieldset-event">
+            <legend id="event-icon">
               <img src="assets/icons/calendar.svg" alt="">
-              <legend>Sobre o evento</legend>
-            </div>
+              Sobre o evento
+            </legend>
             
-            <div class="grid-rows EventName">
-              <label>Título</label>
-              <input type="text" placeholder="Nome do evento" id="EventName" name="EventName">
+            <div class="grid-rows box-input">
+              <label for="title">Título</label>
+              <input type="text" placeholder="Nome do evento" id="title" name="box-input" required>
+            </div>
+
+            <div class="grid-column birth-box">
+              <div class="grid-rows box-input">
+                <label for="Start-birth">Inicio</label>
+                <input type="datetime-local"id="Start-birth" name="DD/MM/AAAA, --:--" required>
+              </div>
+
+              <div class="grid-rows box-input">
+                <label for="end-birt">Fim</label>
+                <input  type="datetime-local" id="end-birt" name="DD/MM/AAAA, --:--" required>
+              </div>
+            </div>
+
+            <div class="type-local grid-rows">
+              <div class="grid-rows">
+                <label>Tipo</label>
+                <div class="type grid-column">
+
+                  <label class="presencial grid-column">
+                    <img class="image-checked" src="assets/icons/building-2.svg" alt="">
+                    <img class="image-off" src="assets/icons/building-off.svg" alt="">
+                      Presencial
+                    <input type="radio" id="presencial" name="tipo" checked>
+                  </label>
+
+                  <label class="online grid-column">
+                    <img class="image-checked" src="assets/icons/video.svg" alt="">
+                    <img class="image-off" src="assets/icons/video-off.svg" alt="">
+                    Online
+                    <input type="radio" id="Online" name="tipo">
+                  </label>
+                </div>
+              </div>
+
+              <div class="local">
+                <label>Local</label>
+                <div class="input-local">
+                  <input type="text" name="local" id="local" placeholder="Link ou endereço">
+                </div>
+              </div>
+            </div>
+            <div class="textarea">
+              <label>Descrição</p>
+              <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento">
+              </textarea>
+            </div>
+          </fieldset>
+          <fieldset id="fieldset-custom">
+            <div class="custom-icon grid-column">
+              <img src="assets/icons/paintbrush-vertical.svg" alt="">
+              <legend>Personalização</legend>
+            </div>
+            <label >Cor principal</label>
+            <div class="main-color grid-column">
+              <div class="box-color">
+                <input type="radio" name="color" id="brand-light-color">
+              </div>
+              <div class="box-color">
+                <input type="radio" name="color" id="navy-color">
+              </div>
+              <div class="box-color">
+                <input type="radio" name="color" id="purple-color">
+              </div>
+              <div class="box-color">
+                <input type="radio" name="color" id="fuschia-color">
+
+              </div>
+              <div class="box-color">
+                <input type="radio" name="color" id="pink-color" checked>
+
+              </div>
+              <div class="box-color">
+                <input type="radio" name="color" id="danger-color">
+
+              </div>
+              <div class="box-color">
+                <input type="radio" name="color" id="orange-color">
+                <div class="circle-color orange-color"></div>
+              </div>
+              <div class="box-color">
+                <input type="radio" name="color" id="yellow-color">
+                <div class="circle-color yellow-color"></div>
+              </div>
+              <div class="box-color">
+                <input type="radio" name="color" id="lime-color">
+                <div class="circle-color lime-color"></div>
+              </div>
+              <div class="box-color">
+                <input type="radio" name="color" id="green-color">
+                <div class="circle-color green-color"></div>
+              </div>
+              <div class="box-color">
+                <input type="radio" name="color" id="cyan-color">
+                <div class="circle-color cyan-color"></div>
+              </div>
             </div>
             
           </fieldset>
         </form>
-
+        
       </div>
     </main>
   </div>

@@ -1,0 +1,72 @@
+.main-color {
+  grid-template-columns: repeat(11,40px);
+  gap: 12px;
+  margin-top: 16px;
+  .box-color input{
+    width: 28.8px;
+    height: 28.8px;
+    border-radius: 50%;
+    border: 6px solid var(--shape-button-color);
+    cursor: pointer;
+  }
+
+  .box-color input:hover {
+    outline: .156rem solid #59b2ff7c;
+    border: 6px solid var(--shape-hover-color);
+  }
+
+  .box-color input:checked {
+    outline: .156rem solid var(--brand-light-color);
+  }
+
+  .box-color input#brand-light-color {
+    background-color: #59B2FF;
+  }
+
+  .box-color input#navy-color {
+    background-color: #6A59FF;
+  }
+
+  .box-color input#purple-color {
+    background-color: #B259FF;
+  }
+
+  .box-color input#fuschia-color {
+    background-color: #FF59F9;
+  }
+
+  .box-color input#pink-color {
+    background-color: #FF598B;
+  }
+
+  .box-color input#danger-color {
+    background-color: #FF5959;
+  }
+
+  .box-color input#orange-color {
+    background-color: #FF8B59;
+  }
+
+  .box-color input#yellow-color {
+    background-color: #FFCD59;
+  }
+
+  .box-color input#lime-color {
+    background-color: #E1FF59;
+  }
+
+  .box-color input#green-color {
+    background-color: #59FF91;
+  }
+
+  .box-color input#cyan-color {
+    background-color: #59FFF9;
+  }
+
+     
+}
+
+
+
+
+

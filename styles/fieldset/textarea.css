@@ -1,0 +1,17 @@
+.textarea {
+  margin-top: 16px; 
+  
+  textarea {
+    margin-top: 12px;
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    min-width: 270px;
+    max-height: 150px;
+    min-height: 136px;
+    padding-top: 16px;
+
+    font: var(--body-md-regular);
+  }
+  
+}
