@@ -18,7 +18,6 @@ O **Festivite** é uma aplicação web que permite aos usuários criar convites 
 ### **Frontend**
 - **HTML5** - Estrutura semântica e formulários
 - **CSS3** - Estilização e layout responsivo
-- **JavaScript** - Interatividade e validações
 
 ### **Frameworks e Bibliotecas**
 - **Google Fonts** - Tipografia (Open Sans, Baloo 2, Leckerli One)
