@@ -24,10 +24,21 @@ input[type="radio"] {
   all: unset;
 }
 
+input, textarea {
+  &::placeholder {
+    color: var(--input-placeholder-color);
+    font: var(--body-md-regular);
+  }
+}
+
+input[type="datetime-local"] {
+  text-transform: uppercase;
+}
 
 
 
-input[type="text"],[type="datetime-local"],textarea{
+
+input[type="text"],[type="datetime-local"],[type="tel"],[type="email"],textarea{
   margin-top: 12px;
   background-color: var(--input-base-color);
   height: 48px;
@@ -35,8 +46,10 @@ input[type="text"],[type="datetime-local"],textarea{
   border-radius: 8px;
   padding-left: 16px;
   color: var(--input-placeholder-color);
+}
 
-      
+input[type="email"]:invalid,input[type="tel"]:invalid {
+  border: 1px solid red;
 }
 
 

@@ -25,7 +25,5 @@
         cursor: pointer;
 
       }
-
-      .upload-button:has(:file)
     }
   }

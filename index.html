@@ -78,9 +78,8 @@
               </div>
             </div>
             <div class="textarea">
-              <label>Descrição</p>
-              <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento">
-              </textarea>
+              <label>Descrição</label>
+              <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
             </div>
           </fieldset>
           <fieldset id="fieldset-custom">
@@ -221,7 +220,63 @@
               <p>Nenhum arquivo selecionado</p>
             </div>
           </fieldset>
+          <fieldset class="fieldset-contact grid-rows">
+            <div class="contact-logo grid-column">
+              <img src="assets/icons/contact.svg" alt="">
+              <legend>Dados para contato</legend>
+            </div>
+            <div class="fullname grid-rows">
+              <label>Nome</label>
+              <input type="text" placeholder="Nome completo" required id="fullname" name="fullname" minlength="4">
+              <div class="circle-alert">
+                <img src="assets/icons/circle-alert.svg" alt="">
+                <span>Campo obrigatório</span>
+              </div>
+            </div>
 
+            <div class="email-phone-wrapper grid-column">
+              <div class="email grid-rows">
+                <label>E-mail</label>
+                <input type="email" placeholder="exemplo@email.com" id="email" name="email">
+              </div>
+              <div class="phone-wrapper grid-column">
+                <label>Telefone</label>
+                <input type="tel" name="phone" id="phone" placeholder="(99) 99999-9999 " minlength="10">
+              </div>
+            </div>
+
+          </fieldset>
+          <fieldset id="terms-wrapper">
+            <div class="terms-and-politic grid-column">
+              <label class="checkbox-terms-politic">
+                <img src="assets/icons/check.svg" alt="">
+                <input type="checkbox" name="terms" id="terms-and-politic" required>
+              </label>
+              <label>Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+            </div>
+            <div class="update-email grid-column">
+              <label class="check-box-terms">
+                <img src="assets/icons/check.svg" alt="">
+                <input type="checkbox" name="terms" id="update-email">
+              </label>
+              <label>Aceito receber atualizações e promoções por e-mail</label>
+            </div>
+            <div class="update-SMS grid-column">
+              <label class="check-box-terms">
+                <img src="assets/icons/check.svg" alt="">
+                <input type="checkbox" name="terms" id="update-SMS">
+              </label>
+              <label>Aceito receber atualizações e promoções por SMS</label>
+            </div>
+
+            <div class="box-button">
+              <label class="box-ticket grid-column" id="submit">
+                <img src="assets/icons/ticket.svg" alt="">
+                <p>Gerar convite</p>
+                <input type="submit" name="button-submit" id="submit">
+              </label>
+            </div>
+          </fieldset>
         </form>
         
       </div>

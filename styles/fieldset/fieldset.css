@@ -53,10 +53,190 @@
     }
     img {
       width: 1.5rem;
-     height: 1.5rem;
-     margin-block: 0.125rem;
+      height: 1.5rem;
+      margin-block: 0.125rem;
     }
   }
+}
+
+
+.fieldset-contact {
+  margin-block: 56px 48px;
+  .contact-logo {
+    grid-template-columns:24px 159px ;
+    align-items: center;
+    gap: 12px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    legend {
+      color: var(--text-heading);
+      font: var(--heading-sm);
+    }
+  }
+
+  .fullname {
+    margin-top: 24px;
+
+    & .circle-alert {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+
+      & span {
+        color: var(--danger-color);
+        font: var(--body-xs-regular);
+      }
+    }
+
+    & input {
+      margin-bottom: 8px;
+
+      &:focus:invalid {
+        outline: 1px solid var(--danger-color);
+      }
+
+      &:valid + .circle-alert {
+        display: none;
+      }
+
+    }
+
+    
+    
+  }
+
+  .email-phone-wrapper {
+    grid-template-columns: 50% 50%;
+    gap: 16px;
+    margin-top: 16px;
+  }
+}
+
+#terms-wrapper {
+  border-top: 1px solid var(--input-stroke-color);
+  input {
+    appearance: none;
+  }
+
+  .check-box-terms {
+    background-color: var(--input-base-color);
+    border: 1px solid var(--input-stroke-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    img {
+      opacity: 0;
+    }
+  }
+
+  .check-box-terms:has(:checked){
+    img {
+      opacity: 100%;
+    }
+  }
+
+    .checkbox-terms-politic {
+    background-color: var(--input-base-color);
+    border: 1px solid var(--input-stroke-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    img {
+      opacity: 0;
+    }
+  }
+
+  .checkbox-terms-politic:has(:checked){
+    img {
+      opacity: 100%;
+    }
+  }
+
+   .check-box-terms:has(input:focus:invalid) {
+    outline: 1px solid var(--danger-color, red);
+  }
+
+
+
+  .terms-and-politic {
+    margin-top: 40px;
+    grid-template-columns:20px 560px ;
+    gap: 12px;
+
+    strong  {
+      color: var(--brand-light-color);
+    }
+
+    strong:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  
+  .terms-and-politic {
+    & input {
+      &:focus:invalid {
+        .check-box-terms {
+          outline: 1px solid var(--danger-color);
+        }
+        
+        
+      }
+    }
+  }
+
+  .update-email {
+    margin-block: 12px;
+    grid-template-columns: 20px 580px;
+    gap: 12px;
+  }
+
+  .update-SMS {
+    grid-template-columns: 20px 600px;
+    gap: 12px;
+  }
+
+ .box-button {
+  color: var(--text-heading);
+  font: var(--body-md-semibold);
+  position: relative;
+  margin-bottom: 80px;
+  & .box-ticket {
+    width: 177px;
+    height: 48px;
+    margin: auto;
+    grid-template-columns: 20px 92px;
+    cursor: pointer;
+    background-color: #1D6FB6;
+    border-radius: 8px;
+    position: absolute;
+    top:52px;
+    right: 70px;
+    gap: 12px;
+    padding: 14px 20px;
+
+    p {
+      width: 105px;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+    }
+    input {
+      opacity: 0;
+      appearance: none;
+      position: absolute;
+    }
+  }
+ }
+  
 }
 
 
