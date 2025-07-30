@@ -1,0 +1,39 @@
+.event-theme {
+  grid-template-rows: 19px 325px ;
+  margin-bottom:79.5px;
+  .themes-group {
+  grid-template-columns: repeat(4,134px);
+  gap: 8px;
+
+  .box-theme {
+    max-width: 136px;
+    background-color: var(--shape-button-color);
+    grid-template-rows: 64px , 21.24px;
+    text-align: center;
+    justify-items: center;
+    border-radius: 8px;
+    padding: 4px 4px 8px 4px;
+    margin-top: 16px;
+    cursor: pointer;
+
+     img {
+      width: 126px;
+      height: 64px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+     }
+
+    } 
+
+     .box-theme:has(:checked){
+      outline: 2px solid var(--brand-light-color);
+    }
+
+    .box-theme:hover {
+      background-color: var(--shape-hover-color);
+    }
+  }
+}
+
+
+

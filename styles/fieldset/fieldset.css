@@ -27,16 +27,19 @@
       font: var(--body-sm-regular);
     }
   }
+  
+  .input-local {
+    input {
+      width: 100%;
+    }
+    
+  } 
+
 }
 
 #fieldset-custom {
   
   
-  img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-block: 0.125rem;
-  }
 
   .custom-icon {
     grid-template-columns: 1.5rem 7.75rem;
@@ -47,6 +50,11 @@
     legend {
       font: var(--heading-sm);
       color: var(--text-heading);
+    }
+    img {
+      width: 1.5rem;
+     height: 1.5rem;
+     margin-block: 0.125rem;
     }
   }
 }

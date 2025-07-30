@@ -1,0 +1,31 @@
+ .cover-photo {
+    grid-template-rows: 19px 21px;
+    gap: 12px;
+    .upload-button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 119px;
+      height: 40px;
+      padding: 12px;
+      border-radius: 8px;
+      background-color: var(--shape-button-color);
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+      & input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        opacity: 0;
+        cursor: pointer;
+
+      }
+
+      .upload-button:has(:file)
+    }
+  }

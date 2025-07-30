@@ -1,6 +1,8 @@
 @import url(fieldset.css);
 @import url(input.css);
 @import url(type.css);
-@import url(local.css);
 @import url(textarea.css);
 @import url(radio.css);
+@import url(theme.css);
+@import url(switch.css);
+@import url(file.css);

@@ -66,6 +66,14 @@ h1 {
   color: var(--text-heading);
 }
 
+.grid-rows {
+  display: grid;
+}
+
+.grid-column {
+  display: grid;
+}
+
 
 
 /* -webkit-font-smoothing: antialiased;

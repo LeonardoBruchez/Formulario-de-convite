@@ -39,15 +39,14 @@
             </div>
 
             <div class="grid-column birth-box">
-              <div class="grid-rows box-input">
-                <label for="Start-birth">Inicio</label>
-                <input type="datetime-local"id="Start-birth" name="DD/MM/AAAA, --:--" required>
-              </div>
-
-              <div class="grid-rows box-input">
-                <label for="end-birt">Fim</label>
-                <input  type="datetime-local" id="end-birt" name="DD/MM/AAAA, --:--" required>
-              </div>
+                <div class="grid-rows box-input">
+                  <label for="Start-birth">Inicio</label>
+                  <input type="datetime-local"id="Start-birth" name="DD/MM/AAAA, --:--" required>
+                </div>
+                <div class="grid-rows box-input">
+                  <label for="end-birt">Fim</label>
+                  <input  type="datetime-local" id="end-birt" name="DD/MM/AAAA, --:--" required>
+                </div>
             </div>
 
             <div class="type-local grid-rows">
@@ -133,8 +132,96 @@
                 <div class="circle-color cyan-color"></div>
               </div>
             </div>
-            
+            <div class="event-theme grid-rows">
+              <label>Tema do evento</label>
+              <div class="themes-group grid-column">
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="birth-theme" checked>
+                  <img src="assets/event/birth-2.svg" alt="">
+                  Aniversário
+                </label>
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="children-theme">
+                  <img src="assets/event/children.svg" alt="">
+                  Infantil
+                </label>
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="graduation-theme">
+                  <img src="assets/event/graduation.svg" alt="">
+                  Formatura
+                </label>
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="marriage-theme">
+                  <img src="assets/event/marriage.svg" alt="">
+                  Casamento
+                </label>
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="baby-shower-theme">
+                  <img src="assets/event/baby-shower.svg" alt="">
+                  Chá de bebê
+                </label>
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="bridal-shower-theme">
+                  <img src="assets/event/bridal-shower.svg" alt="">
+                  Chá de panela
+                </label>
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="carnaval-theme">
+                  <img src="assets/event/carnaval.svg" alt="">
+                  Carnaval
+                </label>
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="easter-theme">
+                  <img src="assets/event/easter.svg" alt="">
+                  Páscoa
+                </label>
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="sao-joao-theme">
+                  <img src="assets/event/sao-joao.svg" alt="">
+                  São João
+                </label>
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="halloween-theme">
+                  <img src="assets/event/halloween.svg" alt="">
+                  Halloween
+                </label>
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="christmas-theme">
+                  <img src="assets/event/christmas.svg" alt="">
+                  Natal
+                </label>
+                <label class="box-theme grid-rows">
+                  <input type="radio" name="themes" id="other-theme">
+                  <img src="assets/event/other.svg" alt="">
+                  Outro
+                </label>
+              </div>
+            </div>
+            <div class="switch-upload grid-column">
+              <div class="switch-group grid-rows">
+                <label>Estilo</label>
+                <div class="dark-button grid-column">
+                  <div class="switch-toggle">
+                    <input type="checkbox" id="cnk">
+                    <label for="cnk" class="switch">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <label> Escuro</label>
+                </div>
+              </div>
+              <div class="cover-photo grid-rows">
+                <label>Foto de capa</label>
+                <div class="upload-button">
+                  <input type="file">
+                  <img src="assets/icons/upload.svg" alt="">
+                  <p>Selecionar</p>
+                </div>
+              </div>
+              <p>Nenhum arquivo selecionado</p>
+            </div>
           </fieldset>
+
         </form>
         
       </div>

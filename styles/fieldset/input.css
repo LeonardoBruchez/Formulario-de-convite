@@ -19,9 +19,12 @@ input[type="text"]:focus,[type="datetime-local"]:focus,textarea:focus{
   outline: 1px solid #59B2FF;
 }
 
+
 input[type="radio"] {
   all: unset;
 }
+
+
 
 
 input[type="text"],[type="datetime-local"],textarea{
