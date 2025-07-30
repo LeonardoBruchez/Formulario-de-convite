@@ -18,7 +18,6 @@ O **Festivite** é uma aplicação web que permite aos usuários criar convites 
 ### **Frontend**
 - **HTML5** - Estrutura semântica e formulários
 - **CSS3** - Estilização e layout responsivo
-- **JavaScript** - Interatividade e validações
 
 ### **Frameworks e Bibliotecas**
 - **Google Fonts** - Tipografia (Open Sans, Baloo 2, Leckerli One)
@@ -27,7 +26,6 @@ O **Festivite** é uma aplicação web que permite aos usuários criar convites 
 
 ### **CSS Grid Layout**
 - Layout principal usando `display: grid`
-- Grid responsivo para diferentes seções
 - Organização em colunas e linhas flexíveis
 
 ### **CSS Flexbox**
@@ -84,12 +82,6 @@ O **Festivite** é uma aplicação web que permite aos usuários criar convites 
 - **Media queries** para responsividade
 - **Animações** e transições
 - **Organização modular** de estilos
-
-### **JavaScript**
-- Manipulação do DOM
-- Validação de formulários
-- Interações dinâmicas
-- Event handling
 
 ### **Figma para Código**
 - **Interpretação de designs** do Figma
@@ -148,18 +140,6 @@ O projeto está configurado para funcionar no **GitHub Pages**. Para fazer o dep
 2. Vá em Settings > Pages
 3. Selecione a branch main
 4. O site ficará disponível em: `https://[seu-usuario].github.io/[nome-do-repo]`
-
-## 🔧 Correções Realizadas
-
-### **Problema Identificado e Corrigido:**
-- **CSS não carregando no GitHub Pages**: O caminho do CSS estava como absoluto (`/styles/index.css`), foi alterado para relativo (`./styles/index.css`)
-
-## 📱 Responsividade
-
-O projeto foi desenvolvido com foco em:
-- Layout responsivo
-- Adaptação para diferentes tamanhos de tela
-- Experiência do usuário otimizada
 
 ## 🎨 Personalização
 
